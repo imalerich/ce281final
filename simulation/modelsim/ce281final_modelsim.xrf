@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, /home/imalerich/dev/ce281final/ce281final.bdf
+source_file = 1, /home/imalerich/dev/ce281final/db/ce281final.cbx.xml
+design_name = ce281final
+instance = comp, \A~I\, A, ce281final, 1
+instance = comp, \B~I\, B, ce281final, 1
+instance = comp, \F~I\, F, ce281final, 1
+instance = comp, \C~I\, C, ce281final, 1
