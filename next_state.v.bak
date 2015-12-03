@@ -1,0 +1,5 @@
+module next_state(y3, y2, y1, y0, s, Y3, Y2, Y1, Y0);
+	input y3, y2, y1, y0, s;
+	output Y3, Y2, Y1, Y0;
+	
+endmodule

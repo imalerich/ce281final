@@ -4,4 +4,5 @@ module set_value(J, K, Enable, Set);
 	
 	assign J = Enable & Set;
 	assign K = Enable & ~Set;
+	
 endmodule
