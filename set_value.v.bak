@@ -1,0 +1,6 @@
+module set_value(Out, Enable, Set);
+	output Out;
+	input Enable, Set;
+	
+	assign Out = 1;
+endmodule
