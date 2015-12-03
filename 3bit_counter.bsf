@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 112 112)
-	(text "2bit_counter" (rect 5 0 75 12)(font "Arial" (font_size 8)))
+	(text "3bit_counter" (rect 5 0 75 12)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 81 26 92)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -43,6 +43,13 @@ applicable agreement for further details.
 		(text "Q1" (rect 0 0 16 12)(font "Arial" (font_size 8)))
 		(text "Q1" (rect 59 43 75 55)(font "Arial" (font_size 8)))
 		(line (pt 96 48)(pt 80 48))
+	)
+	(port
+		(pt 96 64)
+		(output)
+		(text "Q2" (rect 0 0 16 12)(font "Arial" (font_size 8)))
+		(text "Q2" (rect 59 59 75 71)(font "Arial" (font_size 8)))
+		(line (pt 96 64)(pt 80 64))
 	)
 	(drawing
 		(rectangle (rect 16 16 80 80))
