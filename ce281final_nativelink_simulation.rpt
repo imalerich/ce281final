@@ -4,8 +4,8 @@ Info: Start Nativelink Simulation process
 
 Sim Mode              :  Gate
 Family                :  cycloneii
-Quartus root          :  /home/imalerich/altera/13.0sp1/quartus/linux/
-Quartus sim root      :  /home/imalerich/altera/13.0sp1/quartus/eda/sim_lib
+Quartus root          :  /usr/local/altera/12.1sp1/quartus/linux64/
+Quartus sim root      :  /usr/local/altera/12.1sp1/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
 Simulation Language   :  vhdl
 Version               :  93
@@ -17,21 +17,26 @@ Sim dir               :  simulation/modelsim
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
-Sourced NativeLink script /home/imalerich/altera/13.0sp1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Sourced NativeLink script /usr/local/altera/12.1sp1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File ce281final_run_msim_gate_vhdl.do already exists - backing up current file as ce281final_run_msim_gate_vhdl.do.bak1
 Error: Can't launch ModelSim-Altera Simulation software -- make sure the software is properly installed and the environment variable LM_LICENSE_FILE or MGLS_LICENSE_FILE points to the correct license file.
+Error: 
 Error: NativeLink simulation flow was NOT successful
 
 
 
 ================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
-Nativelink TCL script failed with errorCode:  issued_nl_message
-Nativelink TCL script failed with errorInfo:  Can't launch ModelSim-Altera Simulation software -- make sure the software is properly installed and the environment variable LM_LICENSE_FILE or MGLS_LICENSE_FILE points to the correct license file.
-    while executing
-"error "$emsg" "" "issued_nl_message""
+Nativelink TCL script failed with errorCode:  NONE
+Nativelink TCL script failed with errorInfo:  Can't open transcript file msim_transcript
     invoked from within
-"if [ catch {exec $vsim_cmd -version} version_str] {
-		set emsg "Can't launch $tool Simulation software -- make sure the software is properly installed..."
-    (procedure "launch_sim" line 89)
+"if [catch { open "msim_transcript" r } tscr_fid] {
+			nl_postmsg error "Error: Can't launch $tool Simulation software -- make sure the software is pro..."
+    invoked from within
+"if [ catch {eval gen_msim_script args_hash} msim_do_file_name] {
+	error "$::errorCode" "$::errorInfo"
+    } elseif {$script_mode == 0} {
+	post_message..."
+    (procedure "launch_sim" line 109)
     invoked from within
 "launch_sim launch_args_hash"
     ("eval" body line 1)

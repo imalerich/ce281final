@@ -41,23 +41,19 @@ set_global_assignment -name DEVICE EP2C35F672C6
 set_global_assignment -name TOP_LEVEL_ENTITY ce281final
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "03:37:48  NOVEMBER 21, 2015"
-set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name LAST_QUARTUS_VERSION "12.1 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
 set_global_assignment -name BDF_FILE ce281final.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_N25 -to A
-set_location_assignment PIN_N26 -to B
-set_location_assignment PIN_AE23 -to C
-set_location_assignment PIN_AF23 -to F
-set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY ON -section_id eda_simulation
+set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -section_id eda_simulation
 set_global_assignment -name BDF_FILE 4bit_register.bdf
 set_global_assignment -name BDF_FILE 4bit_4register_file.bdf
 set_global_assignment -name BDF_FILE 8shift_register.bdf
@@ -70,4 +66,54 @@ set_global_assignment -name VERILOG_FILE mux2.v
 set_global_assignment -name VERILOG_FILE next_state.v
 set_global_assignment -name BDF_FILE state_machine.bdf
 set_global_assignment -name BDF_FILE 3bit_counter.bdf
+set_global_assignment -name BDF_FILE 4x_seven_seg_display.bdf
+set_location_assignment PIN_N25 -to Seed0
+set_location_assignment PIN_N26 -to Seed1
+set_location_assignment PIN_P25 -to Seed2
+set_location_assignment PIN_AE14 -to Seed3
+set_location_assignment PIN_AF14 -to Seed4
+set_location_assignment PIN_AD13 -to Seed5
+set_location_assignment PIN_AC13 -to Seed6
+set_location_assignment PIN_C13 -to Seed7
+set_location_assignment PIN_V2 -to Load
+set_location_assignment PIN_Y23 -to Hex0A
+set_location_assignment PIN_AA25 -to Hex0B
+set_location_assignment PIN_AA26 -to Hex0C
+set_location_assignment PIN_Y26 -to Hex0D
+set_location_assignment PIN_Y25 -to Hex0E
+set_location_assignment PIN_U22 -to Hex0F
+set_location_assignment PIN_W24 -to Hex0G
+set_location_assignment PIN_AB23 -to Hex1A
+set_location_assignment PIN_V22 -to Hex1B
+set_location_assignment PIN_AC25 -to Hex1C
+set_location_assignment PIN_AC26 -to Hex1D
+set_location_assignment PIN_AB26 -to Hex1E
+set_location_assignment PIN_AB25 -to Hex1F
+set_location_assignment PIN_Y24 -to Hex1G
+set_location_assignment PIN_V20 -to Hex2A
+set_location_assignment PIN_V21 -to Hex2B
+set_location_assignment PIN_W21 -to Hex2C
+set_location_assignment PIN_Y22 -to Hex2D
+set_location_assignment PIN_AA24 -to Hex2E
+set_location_assignment PIN_AA23 -to Hex2F
+set_location_assignment PIN_AB24 -to Hex2G
+set_location_assignment PIN_AF10 -to Hex3A
+set_location_assignment PIN_AB12 -to Hex3B
+set_location_assignment PIN_AC12 -to Hex3C
+set_location_assignment PIN_AD11 -to Hex3D
+set_location_assignment PIN_AE11 -to Hex3E
+set_location_assignment PIN_V14 -to Hex3F
+set_location_assignment PIN_V13 -to Hex3G
+set_location_assignment PIN_N2 -to Clock
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AE22 -to Led0
+set_location_assignment PIN_AF22 -to Led1
+set_location_assignment PIN_W19 -to Led2
+set_location_assignment PIN_V18 -to Led3
+set_location_assignment PIN_U18 -to Led4
+set_location_assignment PIN_U17 -to Led5
+set_location_assignment PIN_AA20 -to Led6
+set_location_assignment PIN_Y18 -to Led7
+set_location_assignment PIN_AE23 -to LedClk
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
