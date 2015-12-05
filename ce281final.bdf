@@ -1720,62 +1720,6 @@ applicable agreement for further details.
 	(pt 488 520)
 )
 (connector
-	(pt 464 304)
-	(pt 472 304)
-)
-(connector
-	(pt 472 304)
-	(pt 504 304)
-)
-(connector
-	(pt 464 320)
-	(pt 472 320)
-)
-(connector
-	(pt 472 320)
-	(pt 520 320)
-)
-(connector
-	(pt 464 336)
-	(pt 472 336)
-)
-(connector
-	(pt 472 336)
-	(pt 536 336)
-)
-(connector
-	(pt 464 352)
-	(pt 472 352)
-)
-(connector
-	(pt 472 352)
-	(pt 552 352)
-)
-(connector
-	(pt 464 368)
-	(pt 472 368)
-)
-(connector
-	(pt 472 368)
-	(pt 568 368)
-)
-(connector
-	(pt 464 384)
-	(pt 472 384)
-)
-(connector
-	(pt 472 384)
-	(pt 584 384)
-)
-(connector
-	(pt 488 288)
-	(pt 472 288)
-)
-(connector
-	(pt 472 288)
-	(pt 464 288)
-)
-(connector
 	(pt 352 176)
 	(pt 352 224)
 )
@@ -1802,46 +1746,6 @@ applicable agreement for further details.
 (connector
 	(pt 600 376)
 	(pt 600 480)
-)
-(connector
-	(pt 472 272)
-	(pt 472 288)
-)
-(connector
-	(pt 472 288)
-	(pt 472 304)
-)
-(connector
-	(pt 472 304)
-	(pt 472 320)
-)
-(connector
-	(pt 472 320)
-	(pt 472 336)
-)
-(connector
-	(pt 472 336)
-	(pt 472 352)
-)
-(connector
-	(pt 472 352)
-	(pt 472 368)
-)
-(connector
-	(pt 472 368)
-	(pt 472 384)
-)
-(connector
-	(pt 472 384)
-	(pt 472 504)
-)
-(connector
-	(pt 584 272)
-	(pt 584 384)
-)
-(connector
-	(pt 584 384)
-	(pt 584 616)
 )
 (connector
 	(pt 800 272)
@@ -1923,13 +1827,46 @@ applicable agreement for further details.
 	(pt 672 480)
 	(pt 848 480)
 )
-(junction (pt 472 304))
-(junction (pt 472 320))
-(junction (pt 472 336))
-(junction (pt 472 352))
-(junction (pt 472 368))
-(junction (pt 472 384))
-(junction (pt 472 288))
+(connector
+	(pt 584 272)
+	(pt 584 384)
+)
+(connector
+	(pt 584 384)
+	(pt 584 616)
+)
+(connector
+	(pt 472 272)
+	(pt 472 504)
+)
+(connector
+	(pt 464 288)
+	(pt 488 288)
+)
+(connector
+	(pt 464 304)
+	(pt 504 304)
+)
+(connector
+	(pt 464 320)
+	(pt 520 320)
+)
+(connector
+	(pt 464 336)
+	(pt 536 336)
+)
+(connector
+	(pt 464 352)
+	(pt 552 352)
+)
+(connector
+	(pt 464 368)
+	(pt 568 368)
+)
+(connector
+	(pt 464 384)
+	(pt 584 384)
+)
 (junction (pt 352 224))
 (junction (pt 352 480))
 (junction (pt 672 480))

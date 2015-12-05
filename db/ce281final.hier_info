@@ -41,14 +41,14 @@ Hex3D <= 4x_seven_seg_display:inst1.Hex0D5
 Hex3E <= 4x_seven_seg_display:inst1.Hex0E6
 Hex3G <= 4x_seven_seg_display:inst1.Hex0G8
 Hex3F <= 4x_seven_seg_display:inst1.Hex0F7
-Led0 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
-Led1 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
-Led2 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
-Led3 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
-Led4 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
-Led5 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
-Led6 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
-Led7 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
+Led0 <= 8bit_shift_register:inst.Q0
+Led1 <= 8bit_shift_register:inst.Q1
+Led2 <= 8bit_shift_register:inst.Q2
+Led3 <= 8bit_shift_register:inst.Q3
+Led4 <= 8bit_shift_register:inst.Q4
+Led5 <= 8bit_shift_register:inst.Q5
+Led6 <= 8bit_shift_register:inst.Q6
+Led7 <= 8bit_shift_register:inst.Out
 
 
 |ce281final|4x_seven_seg_display:inst1

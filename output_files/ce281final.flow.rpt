@@ -1,5 +1,5 @@
 Flow report for ce281final
-Sat Dec  5 15:40:06 2015
+Sat Dec  5 15:40:56 2015
 Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -38,22 +38,22 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Flow Failed - Sat Dec  5 15:40:06 2015         ;
+; Flow Status                        ; Successful - Sat Dec  5 15:40:56 2015          ;
 ; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; ce281final                                     ;
 ; Top-level Entity Name              ; ce281final                                     ;
 ; Family                             ; Cyclone II                                     ;
 ; Device                             ; EP2C35F672C6                                   ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 66                                             ;
+;     Total combinational functions  ; 50                                             ;
+;     Dedicated logic registers      ; 30                                             ;
+; Total registers                    ; 30                                             ;
+; Total pins                         ; 46                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/05/2015 15:40:06 ;
+; Start date & time ; 12/05/2015 15:40:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ce281final          ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.144935160617171                     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.144935165417306                     ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; None                                  ; --            ; --          ; eda_simulation ;
 ; EDA_RUN_TOOL_AUTOMATICALLY          ; Off                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -92,7 +92,7 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 619 MB              ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 624 MB              ; 00:00:01                           ;
 ; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
