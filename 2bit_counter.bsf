@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2012 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -21,35 +21,35 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 112 112)
-	(text "3bit_counter" (rect 5 0 75 12)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 81 26 92)(font "Arial" ))
+	(text "2bit_counter" (rect 5 0 75 13)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 81 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "Clock" (rect 0 0 31 12)(font "Arial" (font_size 8)))
-		(text "Clock" (rect 21 27 52 39)(font "Arial" (font_size 8)))
+		(text "Clock" (rect 0 0 33 13)(font "Arial" (font_size 8)))
+		(text "Clock" (rect 21 27 54 40)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Set" (rect 0 0 18 13)(font "Arial" (font_size 8)))
+		(text "Set" (rect 21 43 39 56)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 96 32)
 		(output)
-		(text "Q0" (rect 0 0 16 12)(font "Arial" (font_size 8)))
-		(text "Q0" (rect 59 27 75 39)(font "Arial" (font_size 8)))
+		(text "Q0" (rect 0 0 17 13)(font "Arial" (font_size 8)))
+		(text "Q0" (rect 58 27 75 40)(font "Arial" (font_size 8)))
 		(line (pt 96 32)(pt 80 32))
 	)
 	(port
 		(pt 96 48)
 		(output)
-		(text "Q1" (rect 0 0 16 12)(font "Arial" (font_size 8)))
-		(text "Q1" (rect 59 43 75 55)(font "Arial" (font_size 8)))
+		(text "Q1" (rect 0 0 17 13)(font "Arial" (font_size 8)))
+		(text "Q1" (rect 58 43 75 56)(font "Arial" (font_size 8)))
 		(line (pt 96 48)(pt 80 48))
-	)
-	(port
-		(pt 96 64)
-		(output)
-		(text "Q2" (rect 0 0 16 12)(font "Arial" (font_size 8)))
-		(text "Q2" (rect 59 59 75 71)(font "Arial" (font_size 8)))
-		(line (pt 96 64)(pt 80 64))
 	)
 	(drawing
 		(rectangle (rect 16 16 80 80))

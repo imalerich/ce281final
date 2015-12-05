@@ -1,51 +1,46 @@
 |ce281final
 Hex0A <= 4x_seven_seg_display:inst1.Hex0A
-Seed0 => inst16.IN0
-Seed0 => 8bit_shift_register:inst.In0
-Seed2 => inst16.IN1
-Seed2 => 8bit_shift_register:inst.In2
-Seed1 => inst16.IN2
-Seed1 => 8bit_shift_register:inst.In1
-Seed3 => inst16.IN3
-Seed3 => 8bit_shift_register:inst.In3
-Seed5 => inst16.IN4
-Seed5 => 8bit_shift_register:inst.In5
-Seed4 => inst16.IN5
-Seed4 => 8bit_shift_register:inst.In4
-Seed6 => inst16.IN6
-Seed6 => 8bit_shift_register:inst.In6
-Seed7 => inst16.IN7
-Seed7 => 8bit_shift_register:inst.In7
-Load => load_i.IN0
+Clock => 2bit_counter:inst26.Clock
+Clock => 8bit_shift_register:inst.Clock
+Clock => inst43.IN1
+Load => 2bit_counter:inst26.Set
 Load => 8bit_shift_register:inst.Load
-Clock => clock_generator:clock_in.CLK_IN
+Load => inst44.IN0
+Seed0 => 8bit_shift_register:inst.In0
+Seed1 => 8bit_shift_register:inst.In1
+Seed2 => 8bit_shift_register:inst.In2
+Seed3 => 8bit_shift_register:inst.In3
+Seed4 => 8bit_shift_register:inst.In4
+Seed5 => 8bit_shift_register:inst.In5
+Seed6 => 8bit_shift_register:inst.In6
+Seed7 => 8bit_shift_register:inst.In7
 Hex0B <= 4x_seven_seg_display:inst1.Hex0B
 Hex0C <= 4x_seven_seg_display:inst1.Hex0C
 Hex0D <= 4x_seven_seg_display:inst1.Hex0D
 Hex0E <= 4x_seven_seg_display:inst1.Hex0E
 Hex0F <= 4x_seven_seg_display:inst1.Hex0F
 Hex0G <= 4x_seven_seg_display:inst1.Hex0G
-Hex1A <= 4x_seven_seg_display:inst1.Hex1A
-Hex1B <= 4x_seven_seg_display:inst1.Hex1B
-Hex1C <= 4x_seven_seg_display:inst1.Hex1C
-Hex1D <= 4x_seven_seg_display:inst1.Hex1D
-Hex1E <= 4x_seven_seg_display:inst1.Hex1E
-Hex1F <= 4x_seven_seg_display:inst1.Hex1F
-Hex1G <= 4x_seven_seg_display:inst1.Hex1G
-Hex2A <= 4x_seven_seg_display:inst1.Hex2A
-Hex2B <= 4x_seven_seg_display:inst1.Hex2B
-Hex2C <= 4x_seven_seg_display:inst1.Hex2C
-Hex2D <= 4x_seven_seg_display:inst1.Hex2D
-Hex2E <= 4x_seven_seg_display:inst1.Hex2E
-Hex2F <= 4x_seven_seg_display:inst1.Hex2F
-Hex2G <= 4x_seven_seg_display:inst1.Hex2G
-Hex3A <= 4x_seven_seg_display:inst1.Hex3A
-Hex3B <= 4x_seven_seg_display:inst1.Hex3B
-Hex3C <= 4x_seven_seg_display:inst1.Hex3C
-Hex3D <= 4x_seven_seg_display:inst1.Hex3D
-Hex3E <= 4x_seven_seg_display:inst1.Hex3E
-Hex3G <= 4x_seven_seg_display:inst1.Hex3G
-Hex3F <= 4x_seven_seg_display:inst1.Hex3F
+Hex1A <= 4x_seven_seg_display:inst1.Hex0A1
+Hex1B <= 4x_seven_seg_display:inst1.Hex0B2
+Hex1C <= 4x_seven_seg_display:inst1.Hex0C3
+Hex1D <= 4x_seven_seg_display:inst1.Hex0D4
+Hex1E <= 4x_seven_seg_display:inst1.Hex0E5
+Hex1F <= 4x_seven_seg_display:inst1.Hex0F6
+Hex1G <= 4x_seven_seg_display:inst1.Hex0G7
+Hex2A <= 4x_seven_seg_display:inst1.Hex0A9
+Hex2B <= 4x_seven_seg_display:inst1.Hex0B10
+Hex2C <= 4x_seven_seg_display:inst1.Hex0C11
+Hex2D <= 4x_seven_seg_display:inst1.Hex0D12
+Hex2E <= 4x_seven_seg_display:inst1.Hex0E13
+Hex2F <= 4x_seven_seg_display:inst1.Hex0F14
+Hex2G <= 4x_seven_seg_display:inst1.Hex0G15
+Hex3A <= 4x_seven_seg_display:inst1.Hex0A2
+Hex3B <= 4x_seven_seg_display:inst1.Hex0B3
+Hex3C <= 4x_seven_seg_display:inst1.Hex0C4
+Hex3D <= 4x_seven_seg_display:inst1.Hex0D5
+Hex3E <= 4x_seven_seg_display:inst1.Hex0E6
+Hex3G <= 4x_seven_seg_display:inst1.Hex0G8
+Hex3F <= 4x_seven_seg_display:inst1.Hex0F7
 Led0 <= 8bit_shift_register:inst.Q0
 Led1 <= 8bit_shift_register:inst.Q1
 Led2 <= 8bit_shift_register:inst.Q2
@@ -54,54 +49,53 @@ Led4 <= 8bit_shift_register:inst.Q4
 Led5 <= 8bit_shift_register:inst.Q5
 Led6 <= 8bit_shift_register:inst.Q6
 Led7 <= 8bit_shift_register:inst.Out
-LedClk <= clock_stop.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ce281final|4x_seven_seg_display:inst1
 Hex0A <= seven_seg_decoder:inst.A
-In0_0 => seven_seg_decoder:inst.Z
-In0_1 => seven_seg_decoder:inst.Y
-In0_2 => seven_seg_decoder:inst.X
-In0_3 => seven_seg_decoder:inst.W
+In0_3 => seven_seg_decoder:inst.Z
+In0_2 => seven_seg_decoder:inst.Y
+In0_1 => seven_seg_decoder:inst.X
+In0_0 => seven_seg_decoder:inst.W
 Hex0B <= seven_seg_decoder:inst.B
 Hex0C <= seven_seg_decoder:inst.C
 Hex0D <= seven_seg_decoder:inst.D
 Hex0E <= seven_seg_decoder:inst.E
 Hex0F <= seven_seg_decoder:inst.F
 Hex0G <= seven_seg_decoder:inst.G
-Hex1A <= seven_seg_decoder:inst1.A
-In1_0 => seven_seg_decoder:inst1.Z
-In1_1 => seven_seg_decoder:inst1.Y
-In1_2 => seven_seg_decoder:inst1.X
-In1_3 => seven_seg_decoder:inst1.W
-Hex1B <= seven_seg_decoder:inst1.B
-Hex1C <= seven_seg_decoder:inst1.C
-Hex1D <= seven_seg_decoder:inst1.D
-Hex1E <= seven_seg_decoder:inst1.E
-Hex1F <= seven_seg_decoder:inst1.F
-Hex1G <= seven_seg_decoder:inst1.G
-Hex2A <= seven_seg_decoder:inst2.A
-In2_0 => seven_seg_decoder:inst2.Z
-In2_1 => seven_seg_decoder:inst2.Y
-In2_2 => seven_seg_decoder:inst2.X
-In2_3 => seven_seg_decoder:inst2.W
-Hex2B <= seven_seg_decoder:inst2.B
-Hex2C <= seven_seg_decoder:inst2.C
-Hex2D <= seven_seg_decoder:inst2.D
-Hex2E <= seven_seg_decoder:inst2.E
-Hex2F <= seven_seg_decoder:inst2.F
-Hex2G <= seven_seg_decoder:inst2.G
-Hex3A <= seven_seg_decoder:inst3.A
-In3_0 => seven_seg_decoder:inst3.Z
-In3_1 => seven_seg_decoder:inst3.Y
-In3_2 => seven_seg_decoder:inst3.X
-In3_3 => seven_seg_decoder:inst3.W
-Hex3B <= seven_seg_decoder:inst3.B
-Hex3C <= seven_seg_decoder:inst3.C
-Hex3D <= seven_seg_decoder:inst3.D
-Hex3E <= seven_seg_decoder:inst3.E
-Hex3F <= seven_seg_decoder:inst3.F
-Hex3G <= seven_seg_decoder:inst3.G
+Hex0A1 <= seven_seg_decoder:inst8.A
+In1_3 => seven_seg_decoder:inst8.Z
+In1_2 => seven_seg_decoder:inst8.Y
+In1_1 => seven_seg_decoder:inst8.X
+In1_0 => seven_seg_decoder:inst8.W
+Hex0B2 <= seven_seg_decoder:inst8.B
+Hex0C3 <= seven_seg_decoder:inst8.C
+Hex0D4 <= seven_seg_decoder:inst8.D
+Hex0E5 <= seven_seg_decoder:inst8.E
+Hex0F6 <= seven_seg_decoder:inst8.F
+Hex0G7 <= seven_seg_decoder:inst8.G
+Hex0A9 <= seven_seg_decoder:inst16.A
+In2_3 => seven_seg_decoder:inst16.Z
+In2_2 => seven_seg_decoder:inst16.Y
+In2_1 => seven_seg_decoder:inst16.X
+In2_0 => seven_seg_decoder:inst16.W
+Hex0B10 <= seven_seg_decoder:inst16.B
+Hex0C11 <= seven_seg_decoder:inst16.C
+Hex0D12 <= seven_seg_decoder:inst16.D
+Hex0E13 <= seven_seg_decoder:inst16.E
+Hex0F14 <= seven_seg_decoder:inst16.F
+Hex0G15 <= seven_seg_decoder:inst16.G
+Hex0A2 <= seven_seg_decoder:inst9.A
+In3_3 => seven_seg_decoder:inst9.Z
+In3_2 => seven_seg_decoder:inst9.Y
+In3_1 => seven_seg_decoder:inst9.X
+In3_0 => seven_seg_decoder:inst9.W
+Hex0B3 <= seven_seg_decoder:inst9.B
+Hex0C4 <= seven_seg_decoder:inst9.C
+Hex0D5 <= seven_seg_decoder:inst9.D
+Hex0E6 <= seven_seg_decoder:inst9.E
+Hex0F7 <= seven_seg_decoder:inst9.F
+Hex0G8 <= seven_seg_decoder:inst9.G
 
 
 |ce281final|4x_seven_seg_display:inst1|seven_seg_decoder:inst
@@ -118,7 +112,7 @@ F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ce281final|4x_seven_seg_display:inst1|seven_seg_decoder:inst1
+|ce281final|4x_seven_seg_display:inst1|seven_seg_decoder:inst8
 Z => Decoder0.IN0
 Y => Decoder0.IN1
 X => Decoder0.IN2
@@ -132,7 +126,7 @@ F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ce281final|4x_seven_seg_display:inst1|seven_seg_decoder:inst2
+|ce281final|4x_seven_seg_display:inst1|seven_seg_decoder:inst16
 Z => Decoder0.IN0
 Y => Decoder0.IN1
 X => Decoder0.IN2
@@ -146,7 +140,7 @@ F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ce281final|4x_seven_seg_display:inst1|seven_seg_decoder:inst3
+|ce281final|4x_seven_seg_display:inst1|seven_seg_decoder:inst9
 Z => Decoder0.IN0
 Y => Decoder0.IN1
 X => Decoder0.IN2
@@ -437,54 +431,20 @@ Set => J.IN1
 Set => K.IN1
 
 
-|ce281final|3bit_counter:inst22
+|ce281final|2bit_counter:inst26
 Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Set => inst5.IN0
 Clock => inst.CLK
 Clock => inst1.CLK
-Clock => inst2.CLK
 Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ce281final|clock_generator:clock_in
-CLK_OUT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-CLK_IN => clock_divider_1024:inst101.CLK_IN
-
-
-|ce281final|clock_generator:clock_in|clock_divider_1024:inst102
-CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-CLK_IN => inst1.CLK
-CLK_IN => inst2.CLK
-CLK_IN => inst3.CLK
-CLK_IN => inst4.CLK
-CLK_IN => inst5.CLK
-CLK_IN => inst6.CLK
-CLK_IN => inst7.CLK
-CLK_IN => inst8.CLK
-CLK_IN => inst9.CLK
-CLK_IN => inst10.CLK
-
-
-|ce281final|clock_generator:clock_in|clock_divider_1024:inst101
-CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-CLK_IN => inst1.CLK
-CLK_IN => inst2.CLK
-CLK_IN => inst3.CLK
-CLK_IN => inst4.CLK
-CLK_IN => inst5.CLK
-CLK_IN => inst6.CLK
-CLK_IN => inst7.CLK
-CLK_IN => inst8.CLK
-CLK_IN => inst9.CLK
-CLK_IN => inst10.CLK
 
 
 |ce281final|state_machine:state_machine
 Out0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Clock => inst1.CLK
-Clock => inst4.CLK
-Clock => inst3.CLK
 Clock => inst2.CLK
+Clock => inst3.CLK
+Clock => inst4.CLK
 S => next_state:inst.s
 Out1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Out2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
@@ -549,7 +509,7 @@ Clock => data3.CLK
 Clock => data2.CLK
 Clock => data1.CLK
 Clock => data0.CLK
-In0 => mux2:set0.B
+In7 => mux2:set0.B
 Load => mux2:set0.S
 Load => mux2:set1.S
 Load => mux2:set2.S
@@ -558,13 +518,13 @@ Load => mux2:set4.S
 Load => mux2:set5.S
 Load => mux2:set6.S
 Load => mux2:set7.S
-In1 => mux2:set1.B
-In2 => mux2:set2.B
-In3 => mux2:set3.B
-In4 => mux2:set4.B
-In5 => mux2:set5.B
-In6 => mux2:set6.B
-In7 => mux2:set7.B
+In6 => mux2:set1.B
+In5 => mux2:set2.B
+In4 => mux2:set3.B
+In3 => mux2:set4.B
+In2 => mux2:set5.B
+In1 => mux2:set6.B
+In0 => mux2:set7.B
 Q0 <= data0.DB_MAX_OUTPUT_PORT_TYPE
 Q1 <= data1.DB_MAX_OUTPUT_PORT_TYPE
 Q2 <= data2.DB_MAX_OUTPUT_PORT_TYPE

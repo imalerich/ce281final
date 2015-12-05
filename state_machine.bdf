@@ -566,48 +566,16 @@ applicable agreement for further details.
 	(pt 768 552)
 )
 (connector
-	(pt 416 136)
-	(pt 400 136)
-)
-(connector
-	(pt 400 136)
-	(pt 400 504)
-)
-(connector
 	(pt 720 504)
 	(pt 400 504)
-)
-(connector
-	(pt 384 520)
-	(pt 384 120)
-)
-(connector
-	(pt 384 120)
-	(pt 416 120)
 )
 (connector
 	(pt 736 520)
 	(pt 384 520)
 )
 (connector
-	(pt 368 536)
-	(pt 368 104)
-)
-(connector
-	(pt 368 104)
-	(pt 416 104)
-)
-(connector
 	(pt 752 536)
 	(pt 368 536)
-)
-(connector
-	(pt 352 552)
-	(pt 352 88)
-)
-(connector
-	(pt 352 88)
-	(pt 416 88)
 )
 (connector
 	(pt 768 552)
@@ -676,6 +644,38 @@ applicable agreement for further details.
 (connector
 	(pt 704 56)
 	(pt 704 152)
+)
+(connector
+	(pt 400 88)
+	(pt 416 88)
+)
+(connector
+	(pt 400 88)
+	(pt 400 504)
+)
+(connector
+	(pt 384 104)
+	(pt 416 104)
+)
+(connector
+	(pt 384 104)
+	(pt 384 520)
+)
+(connector
+	(pt 416 120)
+	(pt 368 120)
+)
+(connector
+	(pt 368 536)
+	(pt 368 120)
+)
+(connector
+	(pt 416 136)
+	(pt 352 136)
+)
+(connector
+	(pt 352 552)
+	(pt 352 136)
 )
 (junction (pt 704 152))
 (junction (pt 704 168))

@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 -80 368 -64)
+	(rect -48 -80 120 -64)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In0" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 224 368 240)
+	(rect -48 0 120 16)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In2" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 376 368 392)
+	(rect -48 48 120 64)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In3" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 528 368 544)
+	(rect -48 88 120 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In4" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 680 368 696)
+	(rect -48 128 120 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In5" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -133,7 +133,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 832 368 848)
+	(rect -48 168 120 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In6" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -149,7 +149,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 984 368 1000)
+	(rect -48 208 120 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In7" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -165,7 +165,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 200 72 368 88)
+	(rect -48 -40 120 -24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "In1" (rect 5 0 20 11)(font "Arial" ))
 	(pt 168 8)
@@ -1542,6 +1542,102 @@ applicable agreement for further details.
 (connector
 	(pt 536 -120)
 	(pt 536 -24)
+)
+(connector
+	(pt 120 -72)
+	(pt 152 -72)
+)
+(connector
+	(pt 152 992)
+	(pt 368 992)
+)
+(connector
+	(pt 152 -72)
+	(pt 152 992)
+)
+(connector
+	(pt 120 -32)
+	(pt 168 -32)
+)
+(connector
+	(pt 368 840)
+	(pt 168 840)
+)
+(connector
+	(pt 168 -32)
+	(pt 168 840)
+)
+(connector
+	(pt 120 8)
+	(pt 184 8)
+)
+(connector
+	(pt 184 688)
+	(pt 368 688)
+)
+(connector
+	(pt 184 8)
+	(pt 184 688)
+)
+(connector
+	(pt 120 56)
+	(pt 200 56)
+)
+(connector
+	(pt 200 56)
+	(pt 200 536)
+)
+(connector
+	(pt 200 536)
+	(pt 368 536)
+)
+(connector
+	(pt 120 96)
+	(pt 216 96)
+)
+(connector
+	(pt 216 96)
+	(pt 216 384)
+)
+(connector
+	(pt 216 384)
+	(pt 368 384)
+)
+(connector
+	(pt 120 136)
+	(pt 232 136)
+)
+(connector
+	(pt 232 136)
+	(pt 232 232)
+)
+(connector
+	(pt 232 232)
+	(pt 368 232)
+)
+(connector
+	(pt 120 176)
+	(pt 248 176)
+)
+(connector
+	(pt 248 176)
+	(pt 248 80)
+)
+(connector
+	(pt 248 80)
+	(pt 368 80)
+)
+(connector
+	(pt 120 216)
+	(pt 264 216)
+)
+(connector
+	(pt 264 216)
+	(pt 264 -72)
+)
+(connector
+	(pt 264 -72)
+	(pt 368 -72)
 )
 (junction (pt 520 80))
 (junction (pt 520 232))
