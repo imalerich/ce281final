@@ -1752,18 +1752,6 @@ applicable agreement for further details.
 	(pt 600 384)
 )
 (connector
-	(pt 432 480)
-	(pt 432 416)
-)
-(connector
-	(pt 432 416)
-	(pt 440 416)
-)
-(connector
-	(pt 400 400)
-	(pt 440 400)
-)
-(connector
 	(pt 872 224)
 	(pt 856 224)
 )
@@ -1804,18 +1792,6 @@ applicable agreement for further details.
 	(pt 384 384)
 )
 (connector
-	(pt 384 480)
-	(pt 432 480)
-)
-(connector
-	(pt 400 224)
-	(pt 384 224)
-)
-(connector
-	(pt 432 480)
-	(pt 608 480)
-)
-(connector
 	(pt 640 464)
 	(pt 640 480)
 )
@@ -1848,28 +1824,52 @@ applicable agreement for further details.
 	(pt 648 232)
 )
 (connector
-	(pt 400 176)
-	(pt 400 224)
-)
-(connector
-	(pt 400 224)
-	(pt 400 400)
-)
-(connector
 	(pt 648 176)
 	(pt 648 184)
 )
 (connector
-	(pt 400 176)
+	(pt 440 400)
+	(pt 424 400)
+)
+(connector
+	(pt 384 224)
+	(pt 424 224)
+)
+(connector
+	(pt 424 176)
+	(pt 424 224)
+)
+(connector
+	(pt 424 224)
+	(pt 424 400)
+)
+(connector
+	(pt 424 176)
 	(pt 648 176)
 )
 (connector
 	(pt 648 176)
 	(pt 704 176)
 )
+(connector
+	(pt 424 480)
+	(pt 424 416)
+)
+(connector
+	(pt 440 416)
+	(pt 424 416)
+)
+(connector
+	(pt 384 480)
+	(pt 424 480)
+)
+(connector
+	(pt 424 480)
+	(pt 608 480)
+)
 (junction (pt 600 384))
-(junction (pt 432 480))
-(junction (pt 400 224))
 (junction (pt 680 480))
 (junction (pt 608 376))
 (junction (pt 648 176))
+(junction (pt 424 224))
+(junction (pt 424 480))
